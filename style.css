@@ -57,6 +57,17 @@ body{
     position: relative;
 }
 
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    width: 265px;
+    font-size: larger;
+    margin: 200px 0px;
+    padding: 9px 8px;
+    height: 50px;
+    flex-direction: row;
+    
 
+}
 
 
