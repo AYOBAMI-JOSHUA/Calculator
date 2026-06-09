@@ -60,14 +60,20 @@ body{
 .screen-header{
     display: flex;
     justify-content: space-between;
-    width: 265px;
-    font-size: larger;
-    margin: 200px 0px;
-    padding: 9px 8px;
-    height: 50px;
-    flex-direction: row;
-    
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    right: 24px;
+}
 
+.pill-btn{
+    background: rgba( 255, 255, 0, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+    color: #2b7fff;
+    font-size: 11px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
 }
 
 
