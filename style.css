@@ -86,7 +86,7 @@ body{
     word-break: break-all;
 }
 
-result-display{
+.result-display{
     font-size: 40px;
     font-weight: 300;
     text-align: right;
@@ -95,7 +95,7 @@ result-display{
     scrollbar-width: none;
 }
 
-keypads{
+.keypads{
     background-color: #ffffff;
     padding: 24px 20px;
     display: grid;
@@ -103,5 +103,46 @@ keypads{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
 
-    
+}
+
+.keypads button {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2, transform 0.1;
+
+}
+
+.btn-light {
+    background-color: rgba(155, 142, 126, 0.918);
+    border-radius: 50px;
+    aspect-ratio: 1;
+}
+
+.btn-light:hover {
+    background-color: #eebf89;
+}
+
+.btn-blue {
+    background-color: #2b7fff;
+    border-radius: 50px;
+    aspect-ratio: 1;
+    font-size: 22px;
+}
+
+.btn-blue:hover {
+    background-color: #4ecbeb;
+}
+
+.btn-zero {
+    grid-column: span 2;
+    border-radius: 30px;
+    aspect-ratio: auto;
+    justify-content: flex-start;
+    padding-left: 32px;
 }
