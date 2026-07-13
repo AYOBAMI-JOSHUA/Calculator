@@ -20,35 +20,35 @@
                 <button class="pill-btn">History</button>
                 <button class="pill-btn">Scientific</button>
             </div>
-            <div class="history-display"></div>
-            <div class="result-display"></div>
+            <div id="history" class="history-display"></div>
+            <div id="result" class="result-display">0</div>
         </div>
 
         <!-- keypads -->
         <div class="keypads">
-            <button class="btn-light">AC</button>
-            <button class="btn-light"></button>
-            <button class="btn-light">%</button>
-            <button class="btn-blue">/</button>
+            <button class="btn-light" onclick="clearAll()">AC</button>
+            <button class="btn-light" onclick="toggleSign()">+/-</button>
+            <button class="btn-light" onclick="appendOperator('%')">%</button>
+            <button class="btn-blue" onclick="appendOperator('/')">/</button>
 
-            <button class="btn-light">7</button>
-            <button class="btn-light">8</button>
-            <button class="btn-light">9</button>
-            <button class="btn-blue"></button>
+            <button class="btn-light" onclick="appendNumber('7')">7</button>
+            <button class="btn-light" onclick="appendNumber('8')">8</button>
+            <button class="btn-light" onclick="appendNumber('9')">9</button>
+            <button class="btn-blue" onclick="appendOperator('*')">×</button>
 
-            <button class="btn-light">4</button>
-            <button class="btn-light">5</button>
-            <button class="btn-light">6</button>
-            <button class="btn-blue">+</button>
+            <button class="btn-light" onclick="appendNumber('4')">4</button>
+            <button class="btn-light" onclick="appendNumber('5')">5</button>
+            <button class="btn-light" onclick="appendNumber('6')">6</button>
+            <button class="btn-blue" onclick="appendOperator('+')">+</button>
 
-            <button class="btn-light">1</button>
-            <button class="btn-light">2</button>
-            <button class="btn-light">3</button>
-            <button class="btn-blue">.</button>
-            
-            <button class="btn-light btn-zero">0</button>
-            <button class="btn-light">.</button>
-            <button class="btn-blue">=</button>
+            <button class="btn-light" onclick="appendNumber('1')">1</button>
+            <button class="btn-light" onclick="appendNumber('2')">2</button>
+            <button class="btn-light" onclick="appendNumber('3')">3</button>
+            <button class="btn-blue" onclick="appendOperator('-')">-</button>
+
+            <button class="btn-light btn-zero" onclick="appendNumber('0')">0</button>
+            <button class="btn-light" onclick="appendDecimal('.')">.</button>
+            <button class="btn-blue" onclick="calculate()">=</button>
         </div>
 
     </div>

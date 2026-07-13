@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #2b7fff;
+    background-color: #e8ecf1;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -23,7 +23,7 @@ body{
     max-width: 360px;
     height: 740px;
     border-radius: 40px;
-    box-shadow: 0 25px 50px -12px rgba( 0, 0, 0, 0.25);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -47,13 +47,13 @@ body{
 
 /* screen-container */
 .screen-container{
-    background: linear-gradient(135deg, #5197ff, #1a73e8);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 30px 24px;
-    color: white;
+    color: #ffffff;
     position: relative;
 }
 
@@ -67,10 +67,10 @@ body{
 }
 
 .pill-btn{
-    background: rgba( 255, 255, 0, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     border: none;
     border-radius: 20px;
-    color: #2b7fff;
+    color: #ffffff;
     font-size: 11px;
     cursor: pointer;
     backdrop-filter: blur(5px);
@@ -78,7 +78,7 @@ body{
 
 .history-display{
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: right;
     margin-bottom: 8px;
     min-height: 20px;
@@ -102,7 +102,6 @@ body{
     height: 56%;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 12px;
-
 }
 
 .keypads button {
@@ -119,24 +118,26 @@ body{
 }
 
 .btn-light {
-    background-color: rgba(155, 142, 126, 0.918);
+    background-color: #f1f3f5;
+    color: #333333;
     border-radius: 50px;
     aspect-ratio: 1;
 }
 
 .btn-light:hover {
-    background-color: #eebf89;
+    background-color: #e2e5e9;
 }
 
 .btn-blue {
-    background-color: #2b7fff;
+    background-color: #667eea;
     border-radius: 50px;
     aspect-ratio: 1;
     font-size: 22px;
+    color: #ffffff;
 }
 
 .btn-blue:hover {
-    background-color: #4ecbeb;
+    background-color: #5a6fd6;
 }
 
 .btn-zero {
